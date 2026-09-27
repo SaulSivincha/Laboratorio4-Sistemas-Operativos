@@ -25,6 +25,7 @@ Cada ejercicio se encuentra directamente en esta carpeta mediante dos archivos c
 | 12 | `12_propuesto_hijo_sigint` |
 | 13 | `13_propuesto_sigchld_valor` |
 | 14 | `14_propuesto_tuberia_corregida` |
+| 15 | `15_caso_curioso_sigpipe` |
 
 ## Compilación
 
@@ -33,6 +34,7 @@ Los archivos C se compilan con GCC y los archivos C++ con G++:
 ```bash
 gcc 03_captura_sigint_alarma.c -o 03_captura_sigint_alarma
 g++ 01_manejador_sigint.cpp -o 01_manejador_sigint
+gcc 15_caso_curioso_sigpipe.c -o 15_caso_curioso_sigpipe
 ```
 
 ## Ejecución
