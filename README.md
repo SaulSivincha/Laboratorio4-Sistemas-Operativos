@@ -46,3 +46,7 @@ Ejemplo de ejecución del primer programa:
 ```
 
 Para finalizar los programas que esperan una señal, se puede usar `Ctrl+C` o enviar la señal correspondiente desde otra terminal con `kill`.
+
+## Caso curioso: `SIGPIPE`
+
+El programa `15_caso_curioso_sigpipe` no imprime mensajes propios. Al ejecutarlo, el hijo cierra los dos extremos de la tubería y el padre intenta escribir después de esperar su terminación, por ello el núcleo envía la señal `SIGPIPE` al padre y el intérprete de comandos muestra que el proceso fue terminado por una tubería rota.
